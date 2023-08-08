@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;600&display=swap');
+
+#root {@apply min-h-screen flex-col flex}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+    display: none;
+}
+.container {@apply px-6 mx-auto md:px-10 xl:px-20}
+.title {@apply font-poppins text-xl font-semibold text-text self-start md:text-2xl}
+.flexCenter {@apply flex items-center justify-center}
+.card {@apply max-w-[272px] rounded-xl shadow-base flex flex-col}
+.icon {@apply w-6 h-6 fill-current}
+
+.header {@apply bg-[#FEFCFF]}
+
+.main-section {@apply pt-10 pb-[50px] bg-[url('../public/assets/main-background.png')] bg-center flex-grow}
+
+.filter {@apply flex gap-6 self-end relative}
+.filter__button {@apply p-4 rounded-lg bg-white shadow-base text-text font-poppins text-lg font-medium hover:text-accent focus:text-accent md:flex md:gap-4 }
+
+.card-chip {@apply px-3 py-1.5 bg-white rounded-lg font-poppins font-medium leading-[1.42]}
+.card-data-location {@apply font-poppins leading-[1.71] text-accent}
+.card-description {@apply font-poppins text-base leading-[1.42] text-[#49454F] }
+.card-action-button {@apply font-poppins font-medium text-sm leading-[1.33] px-4 py-2 rounded transition-colors}
+
+.pagination-button {@apply p-2 w-10 h-10 font-poppins text-[18px] text-center font-bold text-devider md:p-5 md:w-16 md:h-16}
+.pagination-button.isActive {@apply text-accent}
+
+.form-label {@apply font-poppins text-lg cursor-pointer leading-none text-accent tracking-[0.4px] mb-2}
+.form-input {@apply w-full pl-3 pr-9 py-4 rounded-lg border-devider border font-poppins font-medium leading-normal text-text}
+.form-option {@apply p-4 font-poppins text-lg text-text border-b border-devider}
+.form-input-icon {@apply absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer}
